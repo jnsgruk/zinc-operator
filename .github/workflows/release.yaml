@@ -11,9 +11,7 @@ on:
       - ".github/workflows/update-oci.yaml"
       - ".github/workflows/publish-oci.yaml"
       - ".gitignore"
-      - "Dockerfile"
       - "rockcraft.yaml"
-      - "tox.ini"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

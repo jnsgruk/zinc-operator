@@ -8,11 +8,7 @@ on:
       - ".github/workflows/update-libs.yaml"
       - ".github/workflows/update-oci.yaml"
       - ".gitignore"
-      - "Dockerfile"
       - "rockcraft.yaml"
-  push:
-    branches:
-      - "renovate/**"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
